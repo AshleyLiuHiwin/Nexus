@@ -1,0 +1,245 @@
+html body{
+  font-family: "Montserrat";
+  background-color: #e6e6e6;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+h1, h3{
+  text-align: center;
+  position:relative;
+  padding-top:1em;
+/*  padding-top: 15em; */
+}
+button{
+  background-color: white;
+  color: #76CABA;
+  padding: 1em 1.5em;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.button:hover {background-color: #76CABA; color:white;}
+
+.button:active {background-color: white; color:#76CABA;
+}
+/*#backgroundImage{
+  position:absolute;
+  z-index:-10;
+  padding-top: 0;
+  display: block;
+  background-image:url("images/skyscraper.jpg");
+  margin: 0 auto;
+  height: 30em;
+  width: 100%;
+}
+*/
+p{
+/*  animation: fadeout 5s; */
+  padding-left:5em;
+  padding-right: 5em;
+  padding-bottom: 1em;
+  font-size: 24px;
+}
+
+img{
+  height:50px;
+  z-index: 100;
+}
+#navbar{
+  display:flex;
+  justify-content: center;
+  animation: fadeIn 5s;
+  text-align: center;
+  overflow: hidden;
+  background-color: hsla(187, 9%, 25%, 0.85);
+  padding-top: 2em;
+  padding-bottom: 2em;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+#navbar a{
+  float: center;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#navbar a:hover{
+ color: #76CABA;
+}
+
+#navbar a:active{
+ color: white;
+}
+#footer{
+  position:relative;
+  left:0;
+  bottom: 0;
+  text-align: center;
+  color:brown;
+  overflow: hidden;
+  background-color: hsla(187, 9%, 25%, 0.85);
+  width: 100%;
+  z-index: 10;
+}
+
+p.footer{
+  color:white;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  padding-top: 0px;
+  font-family: "Montserrat";
+}
+
+#bio{
+  background-color: white;
+}
+
+#theForm{
+  background-color: hsla(169, 44%, 63%, 0.50);
+  padding:5em;
+}
+
+ul{
+  padding-left:3em;
+  padding-right: 3em;
+  font-size: 24px;
+  list-style-type: none;
+}
+li{
+  padding-bottom: 1em;
+}
+a{
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+a:hover{
+ color: #76CABA;
+}
+a:active{
+ color: white;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input, select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 3em;
+}
+#mapdiv{
+  display:flex;
+  background-color: white;
+  padding:3em;
+}
+#mapPic{
+  object-fit: contain;
+  width:70%;
+  height:25em;
+}
+
+@keyframes fadeout{
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+/* On screens that are 992px or less, set navbar to horizontal */
+@media screen and (max-width:600px) {
+  p, ul,  #navbar a {font-size: 14px;}
+  h1{font-size: 20px;}
+  h2{
+    font-size:16px;
+  }
+  h2{
+    padding-left: 4em;
+  }
+}
+@media screen and (max-width:1000px) {
+
+  .logo-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  ul{
+    padding-left:0;
+    padding-right: 0;
+  }
+  #previousProjects{
+    padding-left: 5em;
+    padding-right: 5em;
+    float:center;
+    justify-content: center;
+      }
+  #mapdiv{
+    display:grid;
+    grid-template-columns: 1fr;
+    padding-left:5em;
+    padding-right:5em;
+    padding-bottom: 3em;
+  }
+  #mapPic{
+    object-fit: contain;
+    width:100%;
+    height:20em;
+  }
+  #navbar {
+    flex-direction: column;
+    position:relative;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    background-color:hsla(187, 9%, 25%, 0.85);
+  }
+  h2{
+    padding-left: 4em;
+  }
+}
+@media screen and (min-width:1001px) {
+  p, ul,  #navbar a {font-size: 18px;}
+  h2{font-size:24px;}
+  #navbar{  display:flex;
+    justify-content: center;}
+  #previousProjects{
+    display:grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+  }
+  h2{
+    padding-left: 4em;
+  }
+}

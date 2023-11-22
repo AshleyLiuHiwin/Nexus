@@ -1,0 +1,192 @@
+html body{
+  font-family: "Montserrat";
+  background-color: white;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+h1{
+  text-align: center;
+  position:relative;
+  padding-top:1em;
+/*  padding-top: 15em; */
+}
+h2{
+  padding-left: 5em;
+}
+
+p{
+/*  animation: fadeout 5s; */
+  padding-left:2em;
+  padding-right: 2em;
+  padding-bottom: 0;
+  font-size: 24px;
+}
+#yre{
+  font-size: 24px;
+  text-decoration: underline;
+  }
+#logo{
+  height:50px;
+  width: auto;
+  z-index: 100;
+  padding:none;
+}
+#navbar{
+  display:flex;
+  justify-content: center;
+  animation: fadeIn 5s;
+  text-align: center;
+  overflow: hidden;
+  background-color: hsla(187, 9%, 25%, 0.85);
+  padding-top: 2em;
+  padding-bottom: 2em;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+#navbar a{
+  float: center;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#navbar a:hover{
+ color: #76CABA;
+}
+
+#navbar a:active{
+ color: white;
+}
+#footer{
+  position:relative;
+  left:0;
+  bottom: 0;
+  text-align: center;
+  color:brown;
+  overflow: hidden;
+  background-color: hsla(187, 9%, 25%, 0.85);
+  width: 100%;
+  z-index: 10;
+}
+
+p.footer{
+  color:white;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  padding-top: 0px;
+}
+
+a{
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+a:hover{
+ color: #76CABA;
+}
+a:active{
+ color: white;
+}
+
+.projects{
+  justify-content: center;
+  padding-bottom: 3em;
+}
+
+figure{
+  float: center;
+  width: 100%;
+  text-align: center;
+  font-size: smaller;
+  text-indent: 0;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+
+@keyframes fadeout{
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+/* On screens that are 992px or less, set navbar to horizontal */
+@media screen and (max-width:600px) {
+  p, ul,  #navbar a, #yre {font-size: 14px;}
+  h1{font-size:18px;}
+  #navbar {
+    flex-direction: column;
+    position:relative;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    background-color:hsla(187, 9%, 25%, 0.85);
+  }
+  .projects {
+    float:center;
+    justify-content: center;
+  }
+  #logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0px;
+  }
+  figure img {
+    object-fit: cover;
+    width: 300px;
+    height:400px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .horizontal{
+    object-fit: contain;
+    width: 300px;
+  }
+}
+@media screen and (min-width:601px) {
+  #navbar{  display:flex;
+    justify-content: center;}
+  .projects{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+  }
+  figure img {
+    object-fit: cover;
+    width: 300px;
+    height:400px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .horizontal{
+    object-fit: contain;
+    width: 300px;
+  }
+}
+@media screen and (min-width:1200px) {
+  #navbar{  display:flex;
+    justify-content: center;}
+  .projects{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+  }
+  .horizontal{
+    object-fit: contain;
+    width: 300px;
+  }
+  figure img {
+    object-fit: cover;
+    justify-content: center;
+    width: 300px;
+    height:400px;
+    padding:1em;
+  }
+}

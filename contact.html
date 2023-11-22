@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nexus Architects LLC</title>
+
+    <meta name="description" content="width=device-width, initial-scale=1" content="Nexus Architects, Flushing, New York City, Architecture">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+<div class="wrapper">
+    <div id="navbar">
+      <div class="logo-image">
+            <img src="logo1.png" class="img-fluid">
+      </div>
+    <a href="index.html">HOME</a>
+    <a href="ourTeam.html">OUR TEAM</a>
+    <a href="projects.html">PROJECTS</a>
+    <a href="contact.html">CONTACT</a>
+</div>
+  <body>
+    <div class="container">
+      <div id="mapdiv">
+        <ul><h3>OUR LOCATION</h3>
+          <li>136-33 37TH AVENUE SUITE #8B FLUSHING, NEW YORK, 11354</li>
+          <li>PHONE:</li>
+          <li>EMAIL:</li>
+          <li>FAX:</li>
+        </ul>
+      <iframe id="mapPic" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.9889515758864!2d-73.8326473235468!3d40.76226773453617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c260101d3dae91%3A0xda190a782a50dbb5!2s136-33%2037th%20Ave%20%238b%2C%20Queens%2C%20NY%2011354!5e0!3m2!1sen!2sus!4v1700504310145!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div id="theForm">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+          <label for="name">NAME</label>
+            <input type="text" id="name" name="name" required>
+          <label for="telephone">PHONE NUMBER</label>
+            <input type="tel" name="telephone" required>
+          <label for="email">EMAIL</label>
+            <input type="email" name="email" required>
+          <label for="message">MESSAGE</label>
+            <textarea id="message" name="message" placeholder="Write something..." style="height:200px" required></textarea>
+          <div class="h-captcha" data-captcha="true"></div>
+          <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+</div>
+      <script src="https://web3forms.com/client/script.js" async defer></script>
+  </body>
+  <div id="footer">
+    <p class="footer">PHONE: 718-715-0802</p>
+    <p class="footer">EMAIL: A.LIU@HIWINUSA.COM </p>
+  </div>
+</div>
+</html>
